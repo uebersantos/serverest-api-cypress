@@ -3,30 +3,46 @@
   "version": "1.0.0",
   "description": "Testes automatizados de API do ServeRest com Cypress",
   "main": "index.js",
+
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uebersantos/serverest-api-cypress.git"
   },
+
   "keywords": [
     "cypress",
     "api",
     "serverest",
     "test-automation"
   ],
+
   "author": "",
   "license": "ISC",
+
   "bugs": {
     "url": "https://github.com/uebersantos/serverest-api-cypress/issues"
   },
+
   "homepage": "https://github.com/uebersantos/serverest-api-cypress#readme",
+
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^27.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.21.1",
-    "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-mochawesome-reporter": "^5.0.0"
+    "cypress-mochawesome-reporter": "^5.0.0",
+    "esbuild": "^0.28.2"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/steps/[filepath]/**/*.{js,ts}",
+      "cypress/steps/Compartilhados/**/*.{js,ts}"
+    ]
   }
 }
