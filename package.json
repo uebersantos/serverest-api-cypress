@@ -1,0 +1,30 @@
+{
+  "name": "serverest-api-cypress",
+  "version": "1.0.0",
+  "description": "Testes automatizados de API do ServeRest com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uebersantos/serverest-api-cypress.git"
+  },
+  "keywords": [
+    "cypress",
+    "api",
+    "serverest",
+    "test-automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uebersantos/serverest-api-cypress/issues"
+  },
+  "homepage": "https://github.com/uebersantos/serverest-api-cypress#readme",
+  "devDependencies": {
+    "cypress": "^15.21.1"
+  }
+}
